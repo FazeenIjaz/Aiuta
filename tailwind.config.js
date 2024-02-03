@@ -1,0 +1,56 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        lightGrey: "rgba(136, 91, 234, 0.2)",
+        lightBlack: "rgba(0, 0, 0, 0.7)",
+        "card-bg": "hsla(0, 0%, 100%, 0.8)",
+        "gray-card-bg": "rgba(220,220,235,.8)",
+      },
+      backgroundImage: {
+        "aiuta-text": "url('./src/assets/aiuta-text.png')",
+        "cards-bg": "url('./src/assets/aiuta-cards-bg-dotted.png')",
+        hexagon: "url('./src/assets/images-bg-hexagon.png')",
+        "spline-newLook-before": "url('./src/assets/spline-botom-before.svg')",
+        "spline-newLook-after": "url('./src/assets/spline-upper-after.svg')",
+        "spline-mobile-after": "url('./src/assets/spline.svg')",
+        "spline-mobile-before":
+          "url('./src/assets/splinebottom-mobile-hand.png')",
+        "spline-homeImg-before": "url('./src/assets/homeImg-before.svg')",
+        "spline-shopImg-after": " url('./src/assets/shopImg-after.svg') ",
+        "spline-onLineImg-after": " url('./src/assets/onLine-after.svg') ",
+        "dress1-before": " url('./src/assets/dress1-before.svg') ",
+        "dress2-before": " url('./src/assets/dress2-before.svg') ",
+        "dress3-before": " url('./src/assets/dress3-before.svg') ",
+        "dress4-before": " url('./src/assets/dress4-before.svg') ",
+        "working-spline-before":
+          " url('./src/assets/working-spline-before.svg') ",
+        "spline-tree-before": " url('./src/assets/spline-tree-before.svg') ",
+        "examples-before": " url('./src/assets/examples-before.svg') ",
+        "card-1-bg": " url('./src/assets/card1lady.png') ",
+        "card-3-bg": " url('./src/assets/card3lady.png') ",
+        videoFrame: " url('./src/assets/videoFrame.png') ",
+        search: " url('./src/assets/search.svg')",
+        thumb: " url('./src/assets/thumb.svg')",
+        square: " url('./src/assets/square.svg')",
+        mic: " url('./src/assets/mic.svg')",
+        dna: " url('./src/assets/dna.svg')",
+        globe: " url('./src/assets/globe.svg')",
+        "heart-hand": " url('./src/assets/heart-hand.svg')",
+        "card-4-bg": " url('./src/assets/card-4-bg.svg')",
+        "excellence-before": " url('./src/assets/excellence-before.svg')",
+        "spline-assistant-before":
+          " url('./src/assets/spline-assistant-before.svg')",
+        "lady-back-spline": " url('./src/assets/lady-back-spline.svg')",
+        "lady-front-spline": " url('./src/assets/lady-front-spline.svg')",
+        "copy-right-before": " url('./src/assets/copy-right-before.svg')",
+        "man-footer-after": " url('./src/assets/man-footer.png')",
+        "footer-before": " url('./src/assets/footer.svg')",
+        "products-bg": " url('./src/assets/products-bg.svg')",
+      },
+    },
+  },
+  plugins: [],
+};
