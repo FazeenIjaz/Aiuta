@@ -52,14 +52,14 @@ const Contact = () => {
         </p>
       </footer>
       {/* footer */}
-      <footer className="relative w-[555px pr-[px] pl-[280px] before:bg-footer-before before:content-[''] before:w-[34.625rem] before:h-[39.5rem] before:bg-no-repeat before:absolute before:top-0 before:left-[190px] before:-z-10 z-10 before:-mt-[100px] text-white  ">
-        <p className="mt-[100px] ml-[100px] w-[220px] text-[20px] font-[500]">
+      <footer className="relative w-[555px pr-[px] pl-[280px] before:bg-footer-before before:content-[''] before:w-[34.625rem] before:h-[39.5rem] before:bg-no-repeat before:absolute before:top-0 before:left-[190px] before:-z-10 z-10 before:-mt-[100px] text-white">
+        <p className="mt-[100px] ml-[100px] w-[220px] text-[20px] font-[500] ">
           Follow us for upcoming news & events
         </p>
         <div className="flex flex-col gap-10 ml-[100px]">
           {/* social links */}
           <div className="flex gap-[10px] mt-[30px]">
-            <div className="w-[2rem] h-[2rem]">
+            <div className="w-[2rem] h-[2rem] hover:text-card-bg">
               <a
                 href="https://www.linkedin.com/company/aiuta-inc/"
                 className=""
@@ -78,7 +78,7 @@ const Contact = () => {
                 </svg>
               </a>
             </div>
-            <div className="w-[2rem] h-[2rem]">
+            <div className="w-[2rem] h-[2rem] hover:text-card-bg">
               <a
                 href="https://web.facebook.com/aiutacom?_rdc=1&_rdr"
                 className=""
@@ -97,7 +97,7 @@ const Contact = () => {
                 </svg>
               </a>
             </div>
-            <div className="w-[2rem] h-[2rem]">
+            <div className="w-[2rem] h-[2rem] hover:text-card-bg">
               <a href="https://www.instagram.com/aiutacom/" className="">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -117,15 +117,19 @@ const Contact = () => {
             </div>
           </div>
           {/* subscribe */}
-          <div className="bg-white mt-[32px] text-center rounded-full">
-            <button className="h-[2.75rem] text-[#4000ff] font-[500] text-[22px] w-[100px] bg-white">
+          <div className="mt-[32px] text-center rounded-full">
+            <button className="w-[250px] h-[50px] text-[#4000ff] font-[500] rounded-full text-[22px] bg-white hover:bg-card-bg">
               Subscribe
             </button>
           </div>
         </div>
-        <div className="flex gap-[20px] mt-[100px] ml-[100px]">
-          <p className="text-[#fff] underline">Terms of service</p>
-          <p className="text-[#fff] underline">Privacy policy</p>
+        <div className="flex gap-[20px] mt-[100px] ml-[100px] w-[300px]">
+          <p className="text-[#fff] underline cursor-pointer hover:no-underline hover:text-card-bg">
+            Terms of service
+          </p>
+          <p className="text-[#fff] underline cursor-pointer hover:no-underline hover:text-card-bg">
+            Privacy policy
+          </p>
         </div>
       </footer>
     </section>

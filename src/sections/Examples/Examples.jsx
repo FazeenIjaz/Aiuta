@@ -94,7 +94,7 @@ const Examples = () => {
               <div className="ml-[19px]">96% admire your look</div>
             </div>
           </li>
-          <li className="bg-gray-card-bg w-[652px] h-[380px] pt-[36px] px-[38px] rounded-[20px] mt-[60px] ml-[70px] relative ">
+          <li className="bg-gray-card-bg w-[652px] h-[380px] pt-[36px] px-[38px] rounded-[20px] mt-[60px]  relative ">
             <div className="flex before:absolute before:right-[87px] before:bottom-[52px] before:content-[''] before:w-[4rem] before:h-[5.2rem] before:bg-card-4-bg  before:bg-no-repeat">
               <div className="">
                 <h3 className="w-[284px] leading-[34px] font-[500] text-[35px]">

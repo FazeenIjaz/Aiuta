@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Intro = () => {
   return (
     <>
-      <section className="flex justify-between p-[40px] min-w-[100vw] gap-[200px]">
+      <section className="flex justify-between p-[40px]  gap-[200px]">
         <div className="mt-[140px] w-[34rem]  max-w-[50%]">
           <p className="font-400 text-[#555] mb-[1rem] text-[17px] maru">
             The thing we dream of is
@@ -15,16 +15,18 @@ const Intro = () => {
             generation <br />
             personal AI-stylist
           </h1>
-          <Link to="/products">
-            <button className="bg-lightGrey text-[#4000ff] w-[190px] h-[50px] rounded-[10px] mt-[130px]">
-              Download Aiuta App
-            </button>
-          </Link>
+          {window.scrollY < 80 && (
+            <Link to="/products">
+              <button className="bg-lightGrey text-[#4000ff] w-[190px] h-[50px] rounded-[10px] mt-[130px]">
+                Download Aiuta App
+              </button>
+            </Link>
+          )}
         </div>
         <div className="max-w-[50%]">
           <DressDisplay />
-          {window.scrollY == 0 && (
-            <p className="bg-transparent text-[#4000ff] text-[20px] animate-bounce animate ml-[290px] mt-[40px]">
+          {window.scrollY < 50 && (
+            <p className="bg-transparent text-[#4000ff] text-[20px] animate-bounce ml-[290px] mt-[40px]">
               start scrolling
             </p>
           )}

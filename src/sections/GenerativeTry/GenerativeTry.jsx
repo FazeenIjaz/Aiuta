@@ -53,7 +53,7 @@ const GenerativeTry = () => {
         <img
           src={lady.img}
           alt=""
-          className="max-w-[230px] h-[80vh] object-contain"
+          className="max-w-[230px] h-[500px] object-contain"
         />
       </div>
       <div className="">

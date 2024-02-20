@@ -4,17 +4,17 @@ import "./DressDisplay.css";
 
 const DressDisplay = () => {
   const [currentOutfitIndex, setCurrentOutfitIndex] = useState(0);
-  const [imageLoaded, setImageLoaded] = useState(false);
+  // const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       const nextIndex = (currentOutfitIndex + 1) % outfitMain.length;
       setCurrentOutfitIndex(nextIndex);
-      setImageLoaded(false);
+      // setImageLoaded(false);
 
-      setTimeout(() => {
-        setImageLoaded(true);
-      }, 3000);
+      // setTimeout(() => {
+      //   setImageLoaded(true);
+      // }, 3000);
     }, 3000);
 
     return () => clearInterval(intervalId);
@@ -25,15 +25,13 @@ const DressDisplay = () => {
   return (
     <div
       data-id={currentOutfit.id}
-      className={`flex items-center justify-end m-[20px] mt-[50px] p-[20px] dress-display ${
-        imageLoaded ? "loaded" : ""
-      }`}
+      className={`flex items-center justify-end m-[20px] mt-[50px] p-[20px] dress-display`}
     >
       <img
         src={currentOutfit.lady}
         alt={`Lady ${currentOutfit.id}`}
         className="w-[250px] lady-image "
-        onLoad={() => setImageLoaded(true)}
+        // onLoad={() => setImageLoaded(true)}
       />
 
       <div className="dress-items">
@@ -118,9 +116,7 @@ const DressDisplay = () => {
             </svg>
             9
             <span
-              className={`score-status-number ${
-                currentOutfitIndex !== 0 ? "animated" : ""
-              }`}
+              className={`score-status-number `}
             >
               {currentOutfit.score}
             </span>

@@ -5,7 +5,7 @@ import Prompts from "../sections/Prompts/Prompts";
 import NewLook from "../sections/NewLook/NewLook";
 import Compare from "../sections/Compare/Compare";
 import Availability from "../sections/Availability/Availability";
-import GenerativeTry from "../sections/generativeTry/generativeTry";
+import GenerativeTry from "../sections/GenerativeTry/GenerativeTry";
 import Working from "../sections/Working/Working";
 import Fashion from "../sections/Fashion/Fashion";
 import Examples from "../sections/Examples/Examples";
@@ -38,8 +38,8 @@ const Main = () => {
   };
 
   const fakeContentStyle = {
-    // height: `${realContentWidth}px`,
-    height: `18850px`,
+    height: `${realContentWidth}px`,
+    // height: `18850px`,
   };
   return (
     <>
